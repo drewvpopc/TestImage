@@ -25,12 +25,12 @@ namespace WindowsFormsApp2
 
         private void btnInit_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            //new Form2().Show();
             new Form3().Show();
-            new Form4().Show();
-            new Form5().Show();
-            new Form6().Show();
-            new Form7().Show();
+            //new Form4().Show();
+            //new Form5().Show();
+            //new Form6().Show();
+            //new Form7().Show();
         }
     }
 }
