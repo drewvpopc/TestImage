@@ -18,32 +18,24 @@ namespace WindowsFormsApp2
         public Form2()
         {
             InitializeComponent();
+            GetImages();
+            SetImage();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            GetImages();
+            SetImage();
         }
+        public event EventHandler Load;
         public static Form2 form2 = new Form2();
         
         private static Random random = new Random();
-        private static int Number = random.Next(1, 6);
-        public Random generator;
-
-        public Random Generator
-        {
-            get
-            {
-                if (this.generator == null)
-                {
-                    this.generator = new Random();
-                }
-                return this.generator;
-            }
-        }
+        private static int Number = random.Next(1, 3);
+                
         public static void GetImages()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 3; i++)
             {
                 try
                 {
