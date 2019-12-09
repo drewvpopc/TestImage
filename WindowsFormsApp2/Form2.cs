@@ -22,10 +22,15 @@ namespace WindowsFormsApp2
 
         private void Form2_Load(object sender, EventArgs e)
         {
-        
+
         }
-        private Random generator;
-        private Random Generator
+        public static Form2 form2 = new Form2();
+        
+        private static Random random = new Random();
+        private static int Number = random.Next(1, 6);
+        public Random generator;
+
+        public Random Generator
         {
             get
             {
@@ -36,7 +41,7 @@ namespace WindowsFormsApp2
                 return this.generator;
             }
         }
-        private static void GetImages()
+        public static void GetImages()
         {
             for (int i = 0; i < 5; i++)
             {
@@ -53,33 +58,33 @@ namespace WindowsFormsApp2
 
             }
         }
-        static void SetDesktopWallpaper()
+        public static void SetImage()
         {
-            if (File.Exists("F:/Images/Image" + Number + ".jpg"))
+
+            if (System.IO.File.Exists(@"/testimages" + Number + ".png"))
             {
-                SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, "F:/Images/Image" + Number + ".jpg",
-                    SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
+                form2.pictureBox1.Image = Image.FromFile(@"/testimages" + Number + ".png");
                 Console.WriteLine("Image Changed to Image" + Number);
                 Console.ReadLine();
             }
-            else
-            {
-                if (File.Exists("E:\Images\Image" + Number + ".jpg"))
-                {
-                    SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, "E:\Images\Image" + Number + ".jpg",
-                    SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
-                    Console.WriteLine("Image Changed to Image" + Number);
-                    Console.ReadLine();
-                }
-                else
-                {
-                    if (File.Exists("D:\Images\Image" + Number + ".jpg"))
-                    {
-                        SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, "D:\Images\Image" + Number + ".jpg",
-                        SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
-                        Console.WriteLine("Image Changed to Image" + Number);
-                        Console.ReadLine();
-                    }
+            //else
+            //{
+            //    if (File.Exists("E:\Images\Image" + Number + ".jpg"))
+            //    {
+            //        SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, "E:\Images\Image" + Number + ".jpg",
+            //        SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
+            //        Console.WriteLine("Image Changed to Image" + Number);
+            //        Console.ReadLine();
+            //    }
+            //    else
+            //    {
+            //        if (File.Exists("D:\Images\Image" + Number + ".jpg"))
+            //        {
+            //            SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, "D:\Images\Image" + Number + ".jpg",
+            //            SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
+            //            Console.WriteLine("Image Changed to Image" + Number);
+            //            Console.ReadLine();
+            //        }
                     else
                     {
                         Console.Write("Failed. Image couldn't be found");
@@ -87,6 +92,9 @@ namespace WindowsFormsApp2
                     }
                 }
             }
-        }
-    }
-}
+        } 
+    
+
+
+        
+
