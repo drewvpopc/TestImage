@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,6 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-
         private void Form2_Load(object sender, EventArgs e)
         {
             int Number = GetNum();
@@ -25,13 +25,14 @@ namespace WindowsFormsApp2
         private int GetNum()
         {
             Random random = new Random();
-            int Number = random.Next(1, 3);
+            int Number = random.Next(1, 31);
             return Number;
         }
         private void DisplayImg(int FUCK)
         {
-            pictureBox1.Image = Image.FromFile("testimages/" + FUCK + ".png");
-            //"You're sending number into FUCK"
+            
+                pictureBox1.Image = Image.FromFile("images/image" + FUCK + ".png");
+                //"You're sending number into FUCK"           
         }
 
     }
