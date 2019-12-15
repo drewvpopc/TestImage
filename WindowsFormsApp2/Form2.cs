@@ -1,12 +1,5 @@
 ﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
@@ -30,9 +23,9 @@ namespace WindowsFormsApp2
         }
         private void DisplayImg(int FUCK)
         {
-            
-                pictureBox1.Image = Image.FromFile("images/image" + FUCK + ".png");
-                //"You're sending number into FUCK"           
+
+            pictureBox1.Image = Image.FromFile("images/image" + FUCK + ".png");
+            //"You're sending number into FUCK"           
         }
 
     }
