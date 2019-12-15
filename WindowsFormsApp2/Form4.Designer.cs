@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1306, 1073);
             this.Controls.Add(this.pictureBox1);
-            this.Location = new System.Drawing.Point(400, 400);
+            this.Location = new System.Drawing.Point(0, 400);
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

@@ -30,17 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnInit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(267, 64);
+            this.label1.Location = new System.Drawing.Point(212, 113);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 32);
+            this.label1.Size = new System.Drawing.Size(345, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Test Lable";
+            this.label1.Text = "Do you think this is funny?";
             // 
             // btnInit
             // 
@@ -53,11 +54,22 @@
             this.btnInit.UseVisualStyleBackColor = true;
             this.btnInit.Click += new System.EventHandler(this.btnInit_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(190, 415);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(398, 32);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Designed by Andrew Venenga";
+            this.label2.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 486);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnInit);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -74,6 +86,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnInit;
+        private System.Windows.Forms.Label label2;
     }
 }
 

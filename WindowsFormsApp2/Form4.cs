@@ -24,7 +24,7 @@ namespace WindowsFormsApp2
         private int GetNum()
         {
             Random random = new Random();
-            int Number = random.Next(1, 31);
+            int Number = random.Next(15, 22);
             return Number;
         }
         private void DisplayImg(int FUCK)

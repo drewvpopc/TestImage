@@ -42,17 +42,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form4
+            // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1306, 1073);
             this.Controls.Add(this.pictureBox1);
-            this.Location = new System.Drawing.Point(400, 400);
+            this.Location = new System.Drawing.Point(1050, 400);
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.Name = "Form4";
+            this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form4";
+            this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
