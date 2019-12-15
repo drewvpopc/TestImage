@@ -35,17 +35,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 27);
+            this.label1.Location = new System.Drawing.Point(267, 64);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(148, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Test Lable";
             // 
             // btnInit
             // 
-            this.btnInit.Location = new System.Drawing.Point(103, 129);
+            this.btnInit.Location = new System.Drawing.Point(275, 308);
+            this.btnInit.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnInit.Name = "btnInit";
-            this.btnInit.Size = new System.Drawing.Size(75, 23);
+            this.btnInit.Size = new System.Drawing.Size(200, 55);
             this.btnInit.TabIndex = 1;
             this.btnInit.Text = "AIDS";
             this.btnInit.UseVisualStyleBackColor = true;
@@ -53,12 +55,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(265, 204);
+            this.ClientSize = new System.Drawing.Size(779, 486);
             this.Controls.Add(this.btnInit);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

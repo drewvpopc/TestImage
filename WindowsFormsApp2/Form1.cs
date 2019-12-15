@@ -30,7 +30,6 @@ namespace WindowsFormsApp2
             new Form4().Show();
             new Form5().Show();
             new Form6().Show();
-            new Form7().Show();
         }
     }
 }
