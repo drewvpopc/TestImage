@@ -52,7 +52,7 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form4";
+            this.Text = "End";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

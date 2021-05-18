@@ -52,7 +52,7 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form3";
+            this.Text = "Fucking";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

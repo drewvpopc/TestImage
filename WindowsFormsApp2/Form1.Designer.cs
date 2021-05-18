@@ -36,28 +36,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 113);
+            this.label1.Location = new System.Drawing.Point(151, 109);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 32);
+            this.label1.Size = new System.Drawing.Size(505, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Do you think this is funny?";
+            this.label1.Text = "Couldn\'t transport this many elephants ";
             // 
             // btnInit
             // 
-            this.btnInit.Location = new System.Drawing.Point(275, 308);
+            this.btnInit.Location = new System.Drawing.Point(272, 266);
             this.btnInit.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnInit.Name = "btnInit";
-            this.btnInit.Size = new System.Drawing.Size(200, 55);
+            this.btnInit.Size = new System.Drawing.Size(237, 55);
             this.btnInit.TabIndex = 1;
-            this.btnInit.Text = "AIDS";
+            this.btnInit.Text = "Spawn Cancer";
+            this.btnInit.UseMnemonic = false;
             this.btnInit.UseVisualStyleBackColor = true;
             this.btnInit.Click += new System.EventHandler(this.btnInit_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 415);
+            this.label2.Location = new System.Drawing.Point(180, 407);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(398, 32);
             this.label2.TabIndex = 2;
@@ -75,7 +76,7 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Elephant Control";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

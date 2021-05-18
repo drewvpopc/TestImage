@@ -23,7 +23,7 @@ namespace WindowsFormsApp2
         }
         private void DisplayImg(int FUCK)
         {
-            pictureBox1.Image = Image.FromFile("Images/image" + FUCK + ".png");
+            pictureBox1.Image = Image.FromFile("TheBigGay/image" + FUCK + ".png");
             //"You're sending number into FUCK"
         }
 
